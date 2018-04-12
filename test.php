@@ -1,48 +1,43 @@
 <?php
 include('connection.php');
-$sql = "SELECT giaidoan, tunut, dennut FROM giaidoan WHERE id_baitap=15 ORDER BY giaidoan, tunut, dennut";
+$sql = "SELECT giaidoan, tunut, dennut FROM giaidoan WHERE id_baitap=3 ORDER BY giaidoan, tunut, dennut";
 $result = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_assoc($result)){
+while ($row = mysqli_fetch_assoc($result)) {
     $temp[$row['giaidoan']][] = $row;
 }
-test(0, $temp, null, 1);
+$num_phase = count($temp);
+$str = recurse($temp, 0, $num_phase);
+echo $str;
 
-function test($phase, $temp, $path, $count) {
-    $num_phase = count($temp);
-    for ($i=0;$i<count($temp[$phase])-1;$i++){
-        if ($phase == 0){
-            $path[] = $temp[$phase][$i]['tunut'];
+function formatArr($temp, $phase, $num_phase, $str = '')
+{
+    if (is_array($temp) && $phase <= $num_phase - 1) {
+        if ($phase == 0) {
+            $str .= '[';
         }
-        $path[] = $temp[$phase][$i]['dennut'];
-        if ($phase != $num_phase-1) {
-            test($phase+1,$temp,$path, $count++);
+        for ($i = 0; $i < count($temp[$phase]); $i++) {
+            if ($i == 0) {
+                $str .= '[';
+            }
+            $str .= '[' . $temp[$phase][$i]['tunut'] . ',' . $temp[$phase][$i]['dennut'] . ']';
+            if ($i < count($temp[$phase]) - 1) {
+                $str .= ',';
+            }
+            if ($i == count($temp[$phase]) - 1) {
+                $str .= ']';
+                if ($phase < $num_phase - 1) {
+                    $str .= ',';
+                }
+                recurse($temp, $phase + 1, $num_phase, $str);
+            }
         }
-        else {
-            echo $count;
-            print_r($path);
-            $result[] = $path;
+        if ($phase == $num_phase - 1) {
+            $str .= ']';
+            echo $str;
         }
-        array_pop($path);
-        if ($phase == 0){
-            array_pop($path);
-        }
+    } else {
+        return false;
     }
-    echo 'phase '.$phase.'<br>';
-//    foreach($temp[$phase] as $value) {
-//        if (!isset($path)){
-//            $path[] = $value['tunut'];
-//        }
-//        $path[] = $value['dennut'];
-//        if ($phase == $num_phase-1){
-//            $result[] = $path;
-//            $path = null;
-//        }
-//        else {
-//            test($phase+1, $temp, $path);
-//        }
-//        if (is_array($path)){
-//            array_pop($path);
-//        }
-//    }
 }
+
 ?>

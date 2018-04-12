@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+include 'functions.php';
 if (isset($_POST['btnStep2'])){
     $title = $_POST['title'];
     $num_phase = $_POST['numPhase'];
@@ -38,9 +39,11 @@ $sql = "SELECT giaidoan, tunut, dennut FROM giaidoan WHERE id_baitap=$last_id OR
 $result = mysqli_query($conn, $sql);
 $num_path = mysqli_num_rows($result);
 while ($row = mysqli_fetch_assoc($result)){
-    $pathArr[] = $row;
+    $pathArr[$row['giaidoan']][] = $row;
 }
-
+if (isset($pathArr) && is_array($pathArr)){
+    formatArr($pathArr, 0, $num_phase);die();
+}
 $titlePage = 'Bước 2';
 include('templates/header.php');
 ?>
@@ -97,6 +100,14 @@ include('templates/header.php');
 </div>
 <script src="./js/Chart.js"></script>
 <script>
+    var xLabels = [];
+    var yLabels = [];
+    for (let i=0;i<<?php echo $num_phase; ?>+1;i++){
+        xLabels.push(i);
+    }
+    for (let i=<?php echo $num_solution ?>-1;i>=0;i--){
+        yLabels.push(i+1);
+    }
     var options = {
         elements: {
             line: {
@@ -128,15 +139,16 @@ include('templates/header.php');
             display: false
         }
     }
-    var data = {
-        datasets: [{
-            data: graphData,
-            label: "Đường đi",
-            borderColor: "#3e95cd",
-            fill: false,
-            pointRadius: 5,
-            pointBackgroundColor: '#ff0000'
-        }]
-    }
+    console.log(options);
+//    var data = {
+//        datasets: [{
+//            data: ,
+//            label: "Đường đi",
+//            borderColor: "#3e95cd",
+//            fill: false,
+//            pointRadius: 5,
+//            pointBackgroundColor: '#ff0000'
+//        }]
+//    }
 </script>
 <?php include('templates/footer.php'); ?>

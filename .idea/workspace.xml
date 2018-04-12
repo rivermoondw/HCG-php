@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="084d200e-6da5-4a2d-88d6-456e889eb80a" name="Default" comment="" />
+    <list default="true" id="084d200e-6da5-4a2d-88d6-456e889eb80a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step2.php" afterPath="$PROJECT_DIR$/step2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,36 +46,36 @@
       <file leaf-file-name="step2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="2312">
+              <caret line="142" column="6" lean-forward="false" selection-start-line="142" selection-start-column="6" selection-end-line="151" selection-end-column="7" />
               <folding>
-                <marker date="1522749887348" expanded="true" signature="422:513" ph="INSERT INTO chiphi... " />
-                <marker date="1522749887348" expanded="true" signature="855:950" ph="SELECT * FRO... giaidoan" />
-                <marker date="1522749887348" expanded="true" signature="1053:1148" ph="INSERT INTO giaidoan... " />
-                <marker date="1522749887348" expanded="true" signature="1256:1317" ph="SELECT giaid... giaidoan" />
-                <marker date="1522749887348" expanded="true" signature="1256:1357" ph="SELECT giaid... giaidoan" />
+                <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+                <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+                <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+                <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+                <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="68">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="11" />
               <folding>
-                <marker date="1522817437925" expanded="true" signature="41:137" ph="SELECT giaid... giaidoan" />
+                <marker date="1523519580252" expanded="true" signature="41:136" ph="SELECT giaid... giaidoan" />
               </folding>
             </state>
           </provider>
@@ -101,7 +106,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print_r</find>
+      <find>&lt;?php include('connection.php'); $sql = &quot;SELECT giaidoan, tunut, dennut FROM giaidoan WHERE id_baitap=3 ORDER BY giaidoan, tunut, dennut&quot;; $result = mysqli_query($conn, $sql); while ($row = mysqli_fetch_assoc($result)){     $temp[$row['giaidoan']][] = $row; } $num_phase = count($temp); recurse($temp, 0, $num_phase);  function recurse($temp, $phase, $num_phase){     if (is_array($temp)){         if ($phase == 0) {             echo '[';         }         for ($i=0;$i&lt;count($temp[$phase])-1;$i++) {                      }         if ($phase == $num_phase-1) {             echo ']';         }     }     else {         return false;     } } ?&gt;</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -110,8 +119,9 @@
         <option value="$PROJECT_DIR$/create.php" />
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/step1.php" />
-        <option value="$PROJECT_DIR$/step2.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/step2.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -143,36 +153,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bellman" />
+              <option name="myItemId" value="HCG-php" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bellman" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bellman" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bellman" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="HCG-php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,21 +250,23 @@
       <workItem from="1522736777514" duration="3991000" />
       <workItem from="1522742149094" duration="4439000" />
       <workItem from="1522814237591" duration="3279000" />
+      <workItem from="1523458022735" duration="25000" />
+      <workItem from="1523515868040" duration="4352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15518000" />
+    <option name="totallyTimeSpent" value="19895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -305,6 +303,140 @@
     <entry file="file://$PROJECT_DIR$/step1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522739214740" expanded="true" signature="339:444" ph="INSERT INTO baitap... " />
+            <marker date="1522739214740" expanded="true" signature="339:452" ph="INSERT INTO baitap... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1523519580252" expanded="true" signature="41:136" ph="SELECT giaid... giaidoan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522739214740" expanded="true" signature="339:444" ph="INSERT INTO baitap... " />
+            <marker date="1522739214740" expanded="true" signature="339:452" ph="INSERT INTO baitap... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1523519580252" expanded="true" signature="41:136" ph="SELECT giaid... giaidoan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1522739214740" expanded="true" signature="339:444" ph="INSERT INTO baitap... " />
@@ -318,11 +450,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522749887348" expanded="true" signature="422:513" ph="INSERT INTO chiphi... " />
-            <marker date="1522749887348" expanded="true" signature="855:950" ph="SELECT * FRO... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1053:1148" ph="INSERT INTO giaidoan... " />
-            <marker date="1522749887348" expanded="true" signature="1256:1317" ph="SELECT giaid... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1256:1357" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
           </folding>
         </state>
       </provider>
@@ -367,11 +499,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522749887348" expanded="true" signature="422:513" ph="INSERT INTO chiphi... " />
-            <marker date="1522749887348" expanded="true" signature="855:950" ph="SELECT * FRO... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1053:1148" ph="INSERT INTO giaidoan... " />
-            <marker date="1522749887348" expanded="true" signature="1256:1317" ph="SELECT giaid... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1256:1357" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
           </folding>
         </state>
       </provider>
@@ -416,11 +548,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522749887348" expanded="true" signature="422:513" ph="INSERT INTO chiphi... " />
-            <marker date="1522749887348" expanded="true" signature="855:950" ph="SELECT * FRO... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1053:1148" ph="INSERT INTO giaidoan... " />
-            <marker date="1522749887348" expanded="true" signature="1256:1317" ph="SELECT giaid... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1256:1357" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
           </folding>
         </state>
       </provider>
@@ -429,14 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -460,28 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <marker date="1522749887348" expanded="true" signature="422:513" ph="INSERT INTO chiphi... " />
-            <marker date="1522749887348" expanded="true" signature="855:950" ph="SELECT * FRO... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1053:1148" ph="INSERT INTO giaidoan... " />
-            <marker date="1522749887348" expanded="true" signature="1256:1317" ph="SELECT giaid... giaidoan" />
-            <marker date="1522749887348" expanded="true" signature="1256:1357" ph="SELECT giaid... giaidoan" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -490,13 +592,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="11" />
           <folding>
-            <marker date="1522817437925" expanded="true" signature="41:137" ph="SELECT giaid... giaidoan" />
+            <marker date="1523519580252" expanded="true" signature="41:136" ph="SELECT giaid... giaidoan" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="142" column="6" lean-forward="false" selection-start-line="142" selection-start-column="6" selection-end-line="151" selection-end-column="7" />
+          <folding>
+            <marker date="1523520328823" expanded="true" signature="447:538" ph="INSERT INTO chiphi... " />
+            <marker date="1523520328823" expanded="true" signature="880:975" ph="SELECT * FRO... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1078:1173" ph="INSERT INTO giaidoan... " />
+            <marker date="1523520328823" expanded="true" signature="1281:1342" ph="SELECT giaid... giaidoan" />
+            <marker date="1523520328823" expanded="true" signature="1281:1382" ph="SELECT giaid... giaidoan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
