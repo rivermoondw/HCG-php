@@ -101,6 +101,10 @@ include('templates/header.php');
                 <button type="submit" class="btn btn-primary" name="btnSaveStep2" value="btnSaveStep2">Lưu lại</button>
                 <button type="submit" class="btn btn-primary" name="btnDel" value="btnDel">Xóa</button>
             </form>
+            <form action="ketqua.php" method="post">
+                <input type="hidden" name="idBaitao" value="<?php echo $last_id; ?>">
+                <button type="submit" class="btn btn-primary" name="btnResult" value="<?php echo $last_id; ?>" style="margin-top: 20px;">Xem kết quả</button>
+            </form>
         </div>
         <div class="col-md-8" id="sodo">
             <canvas id="graphIn"></canvas>
@@ -167,7 +171,6 @@ include('templates/header.php');
         }
         dts.push(tempData);
     }
-    console.log(dts);
     var data1 = {
         datasets: dts
     }
