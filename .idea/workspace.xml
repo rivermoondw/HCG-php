@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="084d200e-6da5-4a2d-88d6-456e889eb80a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step2.php" afterPath="$PROJECT_DIR$/step2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.php" afterPath="$PROJECT_DIR$/templates/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="step2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -60,6 +57,16 @@
                 <marker date="1523556870703" expanded="true" signature="1689:1750" ph="SELECT giaid... giaidoan" />
                 <marker date="1523556870703" expanded="true" signature="1689:1790" ph="SELECT giaid... giaidoan" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,6 +191,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCG-php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCG-php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -273,7 +294,7 @@
       <workItem from="1523458022735" duration="25000" />
       <workItem from="1523515868040" duration="5002000" />
       <workItem from="1523551380096" duration="4024000" />
-      <workItem from="1523890498948" duration="23000" />
+      <workItem from="1523890498948" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="ee">
       <created>1523520619070</created>
@@ -282,11 +303,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523520619070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ee">
+      <created>1523890599089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523890599089</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24592000" />
+    <option name="totallyTimeSpent" value="25317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="0" />
@@ -837,6 +865,14 @@
             <marker date="1523556870703" expanded="true" signature="1689:1750" ph="SELECT giaid... giaidoan" />
             <marker date="1523556870703" expanded="true" signature="1689:1790" ph="SELECT giaid... giaidoan" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
