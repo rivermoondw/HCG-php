@@ -6,6 +6,7 @@
 	<title><?php echo $titlePage; ?></title>
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./js/functions.js"></script>
 </head>
 <body>
 	<div class="container">

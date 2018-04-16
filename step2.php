@@ -35,14 +35,22 @@ if (isset($_POST['btnSaveStep2'])){
         $message = 'Đường đi đã có';
     }
 }
+if (isset($_POST['btnDel'])){
+    $title = $_POST['title'];
+    $num_phase = $_POST['numPhase'];
+    $num_solution = $_POST['numSolution'];
+    $last_id = $_POST['lastId'];
+    $phase = $_POST['sltPhase'];
+    $from = $_POST['sltFrom'];
+    $to = $_POST['sltTo'];
+    $sql = "DELETE FROM giaidoan WHERE id_baitap=$last_id AND giaidoan=$phase AND tunut=$from AND dennut=$to";
+    mysqli_query($conn, $sql);
+}
 $sql = "SELECT giaidoan, tunut, dennut FROM giaidoan WHERE id_baitap=$last_id ORDER BY giaidoan, tunut,dennut";
 $result = mysqli_query($conn, $sql);
 $num_path = mysqli_num_rows($result);
 while ($row = mysqli_fetch_assoc($result)){
     $pathArr[$row['giaidoan']][] = $row;
-}
-if (isset($pathArr) && is_array($pathArr)){
-    formatArr($pathArr, 0, $num_phase);die();
 }
 $titlePage = 'Bước 2';
 include('templates/header.php');
@@ -91,10 +99,11 @@ include('templates/header.php');
                 <input type="hidden" name="numSolution" value="<?php echo $num_solution; ?>">
                 <input type="hidden" name="title" value="<?php echo $title; ?>">
                 <button type="submit" class="btn btn-primary" name="btnSaveStep2" value="btnSaveStep2">Lưu lại</button>
+                <button type="submit" class="btn btn-primary" name="btnDel" value="btnDel">Xóa</button>
             </form>
         </div>
         <div class="col-md-8" id="sodo">
-
+            <canvas id="graphIn"></canvas>
         </div>
     </div>
 </div>
@@ -137,18 +146,38 @@ include('templates/header.php');
         },
         legend: {
             display: false
+        },
+        animation: {
+            duration: 0
         }
     }
-    console.log(options);
-//    var data = {
-//        datasets: [{
-//            data: ,
-//            label: "Đường đi",
-//            borderColor: "#3e95cd",
-//            fill: false,
-//            pointRadius: 5,
-//            pointBackgroundColor: '#ff0000'
-//        }]
-//    }
+    <?php
+        if (isset($pathArr) && is_array($pathArr)){
+    ?>
+    var graphInput = getInputPath(<?php echo formatArr($pathArr); ?>);
+    var dts = [];
+    for (let i=0;i<graphInput.length;i++){
+        let tempData = {
+            data: graphInput[i],
+            borderColor: "#3e95cd",
+            fill: false,
+            pointRadius: 5,
+            pointBackgroundColor: '#ff0000'
+
+        }
+        dts.push(tempData);
+    }
+    console.log(dts);
+    var data1 = {
+        datasets: dts
+    }
+    new Chart(document.getElementById("graphIn").getContext('2d'), {
+        type: 'line',
+        data: data1,
+        options: options
+    })
+    <?php
+        }
+    ?>
 </script>
 <?php include('templates/footer.php'); ?>

@@ -1,30 +1,29 @@
 <?php
-function formatArr($temp, $phase, $num_phase, $str = '')
+function formatArr($temp)
 {
     if (is_array($temp)) {
-        if ($phase == 0) {
-            $str .= '[';
-        }
-        for ($i = 0; $i < count($temp[$phase]); $i++) {
-            if ($i == 0) {
-                $str .= '[';
-            }
-            $str .= '[' . $temp[$phase][$i]['tunut'] . ',' . $temp[$phase][$i]['dennut'] . ']';
-            if ($i < count($temp[$phase]) - 1) {
-                $str .= ',';
-            }
-            if ($i == count($temp[$phase]) - 1) {
-                $str .= ']';
-                if ($phase < $num_phase - 1) {
+        $num_phase = count($temp);
+        $str = '[';
+        for ($phase=0;$phase<$num_phase;$phase++){
+            $length = count($temp[$phase]);
+            for ($i=0;$i<$length;$i++){
+                if ($i == 0){
+                    $str .= '[';
+                }
+                $str .= '['.$temp[$phase][$i]['tunut'].','.$temp[$phase][$i]['dennut'].']';
+                if ($i < $length-1){
                     $str .= ',';
                 }
-                formatArr($temp, $phase + 1, $num_phase, $str);
+                if ($i == $length-1){
+                    $str .= ']';
+                }
+            }
+            if ($phase < $num_phase-1){
+                $str .= ',';
             }
         }
-        if ($phase == $num_phase - 1) {
-            $str .= ']';
-            echo $str;
-        }
+        $str .= ']';
+        return $str;
     } else {
         return false;
     }
